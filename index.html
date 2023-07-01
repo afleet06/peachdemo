@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Princessa Peach</title>
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.cdnfonts.com/css/toon-city" rel="stylesheet">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--AniJS-->
+  <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css"/>
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- botones -->
+
+    <div class="btns">
+      <a class="aPlay" href="#" data-anijs="if: click, do: bounceIn animated"><i class="play fa-solid fa-music"></i></a>
+      <a class="aPause hidden" href="#" data-anijs="if: click, do: bounceIn animated"><i class="pause fa-sharp fa-solid fa-pause"></i></a>
+      <a class="chars" href="#" data-anijs="if: click, do: bounceIn animated"><i class="fa-solid fa-person"></i></a>
+      <a class="bgs" href="#" data-anijs="if: click, do: bounceIn animated"><i class="fa-solid fa-image"></i></a>
+      <a href="#" data-anijs="if: click, do: bounceIn animated"><i class="invitacion fa-solid fa-message" data-anijs="if: click, do: bounceIn animated"></i></a>
+      <a href="#"><i class="fecha fa-solid fa-calendar-days" data-anijs="if: click, do: bounceIn animated"></i></a>
+      <a href="https://goo.gl/maps/WpBhLr7TpLhvxekR8" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+      <a class="confirmar" href="#" data-anijs="if: click, do: bounceIn animated"><i class="fa-solid fa-comment-dots"></i></a>
+    </div>
+
+    <!-- botones fin -->
+
+    <img class="logo superpeach" src="images/superpeach.png" alt="">
+    <!-- <img class="bg" src="/images/bg.png" alt=""> -->
+
+    <!-- cumple -->
+
+      <p class="anim cumple">Fátima cumple 6</p>
+
+    <!-- cumple fin -->
+
+    <!-- personajes -->
+
+    <div class="personajes">
+      <img class="anim peach" src="images/peach1.png" alt="">
+    </div>
+
+    <!-- personajes fin-->
+
+    <!-- modal contador -->
+
+    <img class="hidden star" src="images/star.png" alt="" data-anijs="if: click, do: bounceIn animated">
+    <div class="hidden modalContador">
+      <p class="faltan">Faltan:</p>
+      <div class="contador">
+        <table>
+          <tr>
+            <td><span id="days"></span></td>
+            <td><span id="hours"></span></th>
+            <td><span id="minutes"></span></td>
+            <td><span id="seconds"></span></td>
+          </tr>
+          <tr >
+            <th>Días</th>
+            <th>Horas</th>
+            <th>Mins</th>
+            <th>Segs</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- modal contador fin -->
+
+    <!-- modal invitacion -->
+
+    <div class="hidden modalInvitacion">
+      <p>Te invito a mi fiesta de cumpleaños el 6 de Julio a las 4:00 p.m. Por favor confirma tu asistencia. ¡No faltes! </p>
+    </div>
+
+    <!-- modal invitacion -->
+
+    <!-- modal confirmar -->
+
+    <div class="hidden modalConfirmar">
+      <p>Confirmar:</p>
+      <a href="https://api.whatsapp.com/send?phone=++526141828896&text=Confirmo mi asistencia, muchas gracias por invitarme." target="_blank"><i class="fa-regular fa-circle-check"></i></a>
+      <a href="https://api.whatsapp.com/send?phone=++526141828896&text=No podré asistir, pero muchas gracias por la invitación." target="_blank"><i class="fa-regular fa-circle-xmark"></i></a>
+    </div>
+
+    <!-- modal confirmar -->
+
+    <!-- banner -->
+    <div class="divBanner">
+    </div>
+    <!-- banner fin -->
+
+  </div>
+
+  <script src="app/app.js"></script>
+  <script src="contador.js"></script>
+  <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
+</body>
+</html>
